@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   Scale, ShieldCheck, AlertTriangle, Wine, Gauge, FileWarning,
-  Building2, Ban, FileText, Users, Clock, Sparkles, Headphones,
+  Building2, Ban, FileText, Users, Clock, Sparkles, Headphones, LifeBuoy,
   Award, CheckCircle2, ArrowRight, Phone, Mail, MapPin, Instagram,
   Facebook, Linkedin, MessageCircle,
 } from "lucide-react";
@@ -118,7 +118,7 @@ function LandingPage() {
         <div className="container relative mx-auto px-6">
           <div className="animate-fade-in-up max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-gold mb-6">
-              <Sparkles className="h-3 w-3" /> Defesa Administrativa Especializada
+              <Scale className="h-3 w-3" /> Assessoria Jurídica Especializada
             </div>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] mb-6">
               Recebeu notificação de <span className="text-gold">suspensão ou cassação</span> da CNH? Ainda pode haver solução.
@@ -269,14 +269,14 @@ function LandingPage() {
             </div>
           </div>
           <div className="lg:col-span-3">
-            <div className="text-xs uppercase tracking-[0.25em] text-gold-deep mb-3">Sobre a advogada</div>
+            <div className="text-xs uppercase tracking-[0.25em] text-gold-deep mb-3">Advogada Responsável</div>
             <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-2">Dra. Roberta Bruns</h2>
             <div className="text-sm text-muted-foreground mb-6">OAB/SC 62.012</div>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Advogada com mais de 10 anos de experiência jurídica, com atuação em Direito de Trânsito, Direito Civil, Direito Empresarial e Direito Trabalhista. Dedica-se à defesa administrativa em processos de suspensão e cassação da CNH, Lei Seca, recursos de multas e acompanhamento junto aos órgãos de trânsito.
+              Advogada com mais de 10 anos de experiência jurídica, com atuação em Direito de Trânsito, Direito Civil, Direito Empresarial e Direito Trabalhista. Dedica-se à análise da melhor estratégia para defesa dos direitos de condutores em processos de suspensão e cassação da CNH, Lei Seca, recursos de multas e acompanhamento junto aos órgãos de trânsito e judicialmente.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              O atendimento é pautado pela análise técnica de cada caso, transparência na comunicação com o cliente e respeito integral ao Código de Ética da OAB.
+              O atendimento é pautado pela análise técnica de cada caso, transparência na comunicação com o cliente e ética.
             </p>
             <div className="grid grid-cols-3 gap-4 max-w-md">
               {[
@@ -344,7 +344,7 @@ function LandingPage() {
       <section className="py-24 gradient-primary text-white relative overflow-hidden">
         <div className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-gold/10 blur-3xl" />
         <div className="container mx-auto px-6 text-center relative max-w-3xl">
-          <Sparkles className="h-8 w-8 text-gold mx-auto mb-6" />
+          <LifeBuoy className="h-10 w-10 text-gold mx-auto mb-6" />
           <h2 className="font-display text-3xl md:text-5xl font-semibold leading-tight mb-6">
             Quanto antes o caso for analisado, <span className="text-gold">maiores podem ser as possibilidades</span> de defesa.
           </h2>

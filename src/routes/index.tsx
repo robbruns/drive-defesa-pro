@@ -9,14 +9,17 @@ import {
   Accordion, AccordionContent, AccordionItem, AccordionTrigger,
 } from "@/components/ui/accordion";
 import heroImg from "@/assets/hero-driving.jpg";
-import lawyerImg from "@/assets/lawyer-portrait.jpg";
+import lawyerImg from "@/assets/roberta-bruns.jpg";
+import brandLogo from "@/assets/bruns-logo.webp";
 import { WhatsAppFloat, WHATSAPP_URL } from "@/components/WhatsAppFloat";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Defesa de CNH | Suspensão e Cassação — Advocacia de Trânsito" },
-      { name: "description", content: "Defesa administrativa estratégica em suspensão e cassação da CNH, Lei Seca, excesso de pontos e multas gravíssimas. Atendimento online." },
+      { title: "Bruns Advogados | Defesa de CNH em Pomerode/SC" },
+      { name: "description", content: "Bruns Advogados — defesa administrativa em suspensão e cassação da CNH, Lei Seca, pontos e multas gravíssimas. Advogada Roberta Bruns OAB/SC 62.012." },
+      { property: "og:title", content: "Bruns Advogados | Direito de Trânsito" },
+      { property: "og:description", content: "Defesa administrativa estratégica em processos de CNH. Atendimento personalizado em Pomerode/SC e online." },
     ],
   }),
   component: LandingPage,
@@ -76,15 +79,13 @@ function LandingPage() {
       {/* HEADER */}
       <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-background/80 border-b border-border/50">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="h-9 w-9 rounded-md gradient-primary flex items-center justify-center">
-              <Scale className="h-5 w-5 text-gold" />
-            </div>
+          <a href="#top" className="flex items-center gap-3">
+            <img src={brandLogo} alt="Bruns Advogados" width={40} height={40} className="h-10 w-10 rounded-md object-cover" />
             <div className="leading-tight">
-              <div className="font-display font-semibold text-primary">Advocacia</div>
-              <div className="text-[10px] tracking-[0.2em] text-muted-foreground uppercase">Direito de Trânsito</div>
+              <div className="font-display font-semibold text-primary tracking-wide">BRUNS</div>
+              <div className="text-[10px] tracking-[0.3em] text-muted-foreground uppercase">Advogados</div>
             </div>
-          </div>
+          </a>
           <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
             <a href="#problemas" className="hover:text-primary transition">Problemas</a>
             <a href="#servicos" className="hover:text-primary transition">Serviços</a>
@@ -149,13 +150,13 @@ function LandingPage() {
           {/* Card da advogada */}
           <div className="relative animate-fade-in-up lg:justify-self-end">
             <div className="relative max-w-sm mx-auto rounded-2xl bg-white/5 backdrop-blur border border-white/10 p-6 shadow-elegant">
-              <div className="absolute -top-3 -right-3 rounded-full gradient-gold px-3 py-1 text-[10px] font-bold tracking-widest text-primary-deep">
-                OAB/UF 000.000
+              <div className="absolute -top-3 -right-3 rounded-full gradient-gold px-3 py-1 text-[10px] font-bold tracking-widest text-white">
+                OAB/SC 62.012
               </div>
               <div className="aspect-[4/5] rounded-xl overflow-hidden mb-5 border border-white/10">
                 <img
                   src={lawyerImg}
-                  alt="Advogada especialista em Direito de Trânsito"
+                  alt="Dra. Roberta Bruns, advogada especialista em Direito de Trânsito"
                   width={1024}
                   height={1280}
                   className="h-full w-full object-cover"
@@ -163,8 +164,8 @@ function LandingPage() {
               </div>
               <div className="text-center">
                 <div className="text-xs uppercase tracking-[0.2em] text-gold">Advogada Responsável</div>
-                <div className="font-display text-xl mt-1">Dra. [Nome da Advogada]</div>
-                <div className="text-xs text-white/60 mt-1">OAB/UF 000.000 — Direito de Trânsito</div>
+                <div className="font-display text-xl mt-1">Dra. Roberta Bruns</div>
+                <div className="text-xs text-white/60 mt-1">OAB/SC 62.012 — Direito de Trânsito</div>
               </div>
             </div>
           </div>
@@ -290,19 +291,19 @@ function LandingPage() {
           </div>
           <div className="lg:col-span-3">
             <div className="text-xs uppercase tracking-[0.25em] text-gold-deep mb-3">Sobre a advogada</div>
-            <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-2">Dra. [Nome da Advogada]</h2>
-            <div className="text-sm text-muted-foreground mb-6">OAB/UF 000.000</div>
+            <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-2">Dra. Roberta Bruns</h2>
+            <div className="text-sm text-muted-foreground mb-6">OAB/SC 62.012</div>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Advogada com atuação dedicada ao Direito de Trânsito, com experiência em processos administrativos de suspensão e cassação da CNH, defesa em casos de Lei Seca, recursos de multas e acompanhamento de procedimentos junto aos órgãos de trânsito.
+              Advogada com mais de 10 anos de experiência jurídica, com atuação em Direito de Trânsito, Direito Civil, Direito Empresarial e Direito Trabalhista. Dedica-se à defesa administrativa em processos de suspensão e cassação da CNH, Lei Seca, recursos de multas e acompanhamento junto aos órgãos de trânsito.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               O atendimento é pautado pela análise técnica de cada caso, transparência na comunicação com o cliente e respeito integral ao Código de Ética da OAB.
             </p>
             <div className="grid grid-cols-3 gap-4 max-w-md">
               {[
-                { l: "Atuação", v: "Trânsito" },
-                { l: "Atendimento", v: "Nacional" },
-                { l: "Formato", v: "Online" },
+                { l: "Experiência", v: "+10 anos" },
+                { l: "Sede", v: "Pomerode/SC" },
+                { l: "Atendimento", v: "Online" },
               ].map((s) => (
                 <div key={s.l} className="rounded-lg border border-border p-4 text-center">
                   <div className="text-xs uppercase tracking-wider text-muted-foreground">{s.l}</div>
@@ -386,23 +387,21 @@ function LandingPage() {
       <footer className="bg-primary-deep text-white/80">
         <div className="container mx-auto px-6 py-16 grid md:grid-cols-4 gap-10">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="h-9 w-9 rounded-md gradient-gold flex items-center justify-center">
-                <Scale className="h-5 w-5 text-primary-deep" />
-              </div>
-              <div className="font-display font-semibold text-white">Advocacia</div>
+            <div className="flex items-center gap-3 mb-4">
+              <img src={brandLogo} alt="Bruns Advogados" width={40} height={40} className="h-10 w-10 rounded-md object-cover" />
+              <div className="font-display font-semibold text-white tracking-wide">BRUNS ADVOGADOS</div>
             </div>
             <p className="text-sm text-white/60">
-              Escritório com atuação focada em Direito de Trânsito e defesa administrativa em processos de CNH.
+              Escritório de advocacia com atuação em Direito de Trânsito, Civil, Empresarial e Trabalhista.
             </p>
-            <div className="text-xs text-white/50 mt-4">OAB/UF 000.000</div>
+            <div className="text-xs text-white/50 mt-4">Dra. Roberta Bruns — OAB/SC 62.012</div>
           </div>
           <div>
             <h4 className="font-semibold text-white mb-4">Contato</h4>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-start gap-2"><Phone className="h-4 w-4 text-gold mt-0.5" /> (00) 00000-0000</li>
-              <li className="flex items-start gap-2"><Mail className="h-4 w-4 text-gold mt-0.5" /> contato@escritorio.com.br</li>
-              <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-gold mt-0.5" /> Endereço completo do escritório</li>
+              <li className="flex items-start gap-2"><Phone className="h-4 w-4 text-gold mt-0.5 shrink-0" /><span>(47) 99649-1330</span></li>
+              <li className="flex items-start gap-2"><Mail className="h-4 w-4 text-gold mt-0.5 shrink-0" /><span>contato@brunsadvogados.com.br</span></li>
+              <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-gold mt-0.5 shrink-0" /><span>R. Hermann Weege, 1681 — Centro, Pomerode/SC, 89107-000</span></li>
             </ul>
           </div>
           <div>
@@ -429,7 +428,7 @@ function LandingPage() {
         </div>
         <div className="border-t border-white/10">
           <div className="container mx-auto px-6 py-6 text-xs text-white/50 flex flex-col md:flex-row items-center justify-between gap-3">
-            <div>© {new Date().getFullYear()} Escritório de Advocacia. Todos os direitos reservados.</div>
+            <div>© {new Date().getFullYear()} Bruns Advogados. Todos os direitos reservados.</div>
             <div>Conteúdo meramente informativo, em conformidade com o Código de Ética da OAB.</div>
           </div>
         </div>

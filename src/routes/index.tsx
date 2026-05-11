@@ -149,7 +149,6 @@ function LandingPage() {
             </div>
           </div>
         </div>
-        </div>
       </section>
 
       {/* PROBLEMAS */}

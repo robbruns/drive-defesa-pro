@@ -40,8 +40,9 @@ const servicos = [
   { icon: ShieldCheck, title: "Defesa em Cassação", desc: "Análise estratégica do caso e elaboração da defesa cabível." },
   { icon: Wine, title: "Defesa Lei Seca", desc: "Acompanhamento em autuações por embriaguez e recusa de teste." },
   { icon: FileText, title: "Recurso de Multas", desc: "Recursos junto à JARI e ao CETRAN em infrações de trânsito." },
-  { icon: Users, title: "Acompanhamento Administrativo", desc: "Monitoramento integral do processo até a decisão final." },
-  { icon: Headphones, title: "Atendimento Online", desc: "Consulta e envio de documentos de forma 100% digital." },
+  { icon: Users, title: "Acompanhamento Administrativo e Judicial", desc: "Monitoramento integral nas esferas administrativa e judicial até a decisão final." },
+  { icon: Headphones, title: "Atendimento Online em Todo o Brasil", desc: "Consulta e envio de documentos 100% digital, com atendimento para todo o território nacional." },
+  { icon: MapPin, title: "Atendimento Presencial em Pomerode/SC", desc: "Recepção presencial no escritório para clientes da região." },
 ];
 
 const diferenciais = [
@@ -96,7 +97,7 @@ function LandingPage() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center gap-2 rounded-full gradient-gold px-5 py-2.5 text-sm font-semibold text-primary-deep shadow-gold hover:scale-105 transition"
+            className="hidden sm:inline-flex items-center gap-2 rounded-full gradient-whatsapp px-5 py-2.5 text-sm font-semibold text-white shadow-whatsapp hover:scale-105 transition"
           >
             <MessageCircle className="h-4 w-4" /> WhatsApp
           </a>
@@ -114,23 +115,23 @@ function LandingPage() {
           }}
         />
         <div className="absolute -top-32 -right-32 h-96 w-96 rounded-full bg-gold/10 blur-3xl" />
-        <div className="container relative mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
-          <div className="animate-fade-in-up">
+        <div className="container relative mx-auto px-6">
+          <div className="animate-fade-in-up max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-gold mb-6">
               <Sparkles className="h-3 w-3" /> Defesa Administrativa Especializada
             </div>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] mb-6">
               Recebeu notificação de <span className="text-gold">suspensão ou cassação</span> da CNH? Ainda pode haver solução.
             </h1>
-            <p className="text-lg text-white/80 mb-8 max-w-xl">
+            <p className="text-lg text-white/80 mb-8 max-w-xl mx-auto">
               Defesa administrativa estratégica em processos de trânsito, com atendimento personalizado e acompanhamento completo do início ao fim.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full gradient-gold px-8 py-4 font-semibold text-primary-deep shadow-gold hover:scale-105 transition"
+                className="inline-flex items-center justify-center gap-2 rounded-full gradient-whatsapp px-8 py-4 font-semibold text-white shadow-whatsapp hover:scale-105 transition"
               >
                 <MessageCircle className="h-5 w-5" /> Falar com especialista no WhatsApp
               </a>
@@ -141,32 +142,10 @@ function LandingPage() {
                 Conhecer atendimento <ArrowRight className="h-4 w-4" />
               </a>
             </div>
-            <div className="mt-10 flex items-center gap-6 text-sm text-white/70">
-              <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-gold" /> Atendimento online</div>
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-6 text-sm text-white/70">
+              <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-gold" /> Atendimento online em todo o Brasil</div>
+              <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-gold" /> Presencial em Pomerode/SC</div>
               <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-gold" /> Sigilo profissional</div>
-            </div>
-          </div>
-
-          {/* Card da advogada */}
-          <div className="relative animate-fade-in-up lg:justify-self-end">
-            <div className="relative max-w-sm mx-auto rounded-2xl bg-white/5 backdrop-blur border border-white/10 p-6 shadow-elegant">
-              <div className="absolute -top-3 -right-3 rounded-full gradient-gold px-3 py-1 text-[10px] font-bold tracking-widest text-white">
-                OAB/SC 62.012
-              </div>
-              <div className="aspect-[4/5] rounded-xl overflow-hidden mb-5 border border-white/10">
-                <img
-                  src={lawyerImg}
-                  alt="Dra. Roberta Bruns, advogada especialista em Direito de Trânsito"
-                  width={1024}
-                  height={1280}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <div className="text-center">
-                <div className="text-xs uppercase tracking-[0.2em] text-gold">Advogada Responsável</div>
-                <div className="font-display text-xl mt-1">Dra. Roberta Bruns</div>
-                <div className="text-xs text-white/60 mt-1">OAB/SC 62.012 — Direito de Trânsito</div>
-              </div>
             </div>
           </div>
         </div>
@@ -376,7 +355,7 @@ function LandingPage() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 rounded-full gradient-gold px-10 py-5 font-semibold text-primary-deep shadow-gold hover:scale-105 transition"
+            className="inline-flex items-center gap-3 rounded-full gradient-whatsapp px-10 py-5 font-semibold text-white shadow-whatsapp hover:scale-105 transition"
           >
             <MessageCircle className="h-5 w-5" /> Falar no WhatsApp
           </a>
@@ -400,7 +379,7 @@ function LandingPage() {
             <h4 className="font-semibold text-white mb-4">Contato</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2"><Phone className="h-4 w-4 text-gold mt-0.5 shrink-0" /><span>(47) 99649-1330</span></li>
-              <li className="flex items-start gap-2"><Mail className="h-4 w-4 text-gold mt-0.5 shrink-0" /><span>contato@brunsadvogados.com.br</span></li>
+              <li className="flex items-start gap-2"><Mail className="h-4 w-4 text-gold mt-0.5 shrink-0" /><span>roberta@brunsadv.com.br</span></li>
               <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-gold mt-0.5 shrink-0" /><span>R. Hermann Weege, 1681 — Centro, Pomerode/SC, 89107-000</span></li>
             </ul>
           </div>

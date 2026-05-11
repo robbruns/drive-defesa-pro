@@ -172,6 +172,13 @@
   .gradient-brand-line {
     background: linear-gradient(90deg, var(--primary) 0%, var(--gold) 100%);
   }
+  .gradient-whatsapp {
+    background: linear-gradient(135deg, oklch(0.68 0.18 150) 0%, oklch(0.55 0.18 152) 100%);
+    color: #fff;
+  }
+  .shadow-whatsapp {
+    box-shadow: 0 10px 30px -10px color-mix(in oklab, oklch(0.6 0.18 150) 55%, transparent);
+  }
   .text-gold {
     color: var(--gold);
   }

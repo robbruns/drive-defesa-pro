@@ -379,7 +379,7 @@ function LandingPage() {
             <h4 className="font-semibold text-white mb-4">Contato</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2"><Phone className="h-4 w-4 text-gold mt-0.5 shrink-0" /><span>(47) 99649-1330</span></li>
-              <li className="flex items-start gap-2"><Mail className="h-4 w-4 text-gold mt-0.5 shrink-0" /><span>contato@brunsadvogados.com.br</span></li>
+              <li className="flex items-start gap-2"><Mail className="h-4 w-4 text-gold mt-0.5 shrink-0" /><span>roberta@brunsadv.com.br</span></li>
               <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-gold mt-0.5 shrink-0" /><span>R. Hermann Weege, 1681 — Centro, Pomerode/SC, 89107-000</span></li>
             </ul>
           </div>

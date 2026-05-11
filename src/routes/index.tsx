@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   Scale, ShieldCheck, AlertTriangle, Wine, Gauge, FileWarning,
-  Building2, Ban, FileText, Users, Clock, Sparkles, Headphones, Scale, LifeBuoy,
+  Building2, Ban, FileText, Users, Clock, Sparkles, Headphones, LifeBuoy,
   Award, CheckCircle2, ArrowRight, Phone, Mail, MapPin, Instagram,
   Facebook, Linkedin, MessageCircle,
 } from "lucide-react";

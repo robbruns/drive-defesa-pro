@@ -40,8 +40,9 @@ const servicos = [
   { icon: ShieldCheck, title: "Defesa em Cassação", desc: "Análise estratégica do caso e elaboração da defesa cabível." },
   { icon: Wine, title: "Defesa Lei Seca", desc: "Acompanhamento em autuações por embriaguez e recusa de teste." },
   { icon: FileText, title: "Recurso de Multas", desc: "Recursos junto à JARI e ao CETRAN em infrações de trânsito." },
-  { icon: Users, title: "Acompanhamento Administrativo", desc: "Monitoramento integral do processo até a decisão final." },
-  { icon: Headphones, title: "Atendimento Online", desc: "Consulta e envio de documentos de forma 100% digital." },
+  { icon: Users, title: "Acompanhamento Administrativo e Judicial", desc: "Monitoramento integral nas esferas administrativa e judicial até a decisão final." },
+  { icon: Headphones, title: "Atendimento Online em Todo o Brasil", desc: "Consulta e envio de documentos 100% digital, com atendimento para todo o território nacional." },
+  { icon: MapPin, title: "Atendimento Presencial em Pomerode/SC", desc: "Recepção presencial no escritório para clientes da região." },
 ];
 
 const diferenciais = [

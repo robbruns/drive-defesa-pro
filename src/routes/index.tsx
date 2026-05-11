@@ -97,7 +97,7 @@ function LandingPage() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center gap-2 rounded-full gradient-gold px-5 py-2.5 text-sm font-semibold text-primary-deep shadow-gold hover:scale-105 transition"
+            className="hidden sm:inline-flex items-center gap-2 rounded-full gradient-whatsapp px-5 py-2.5 text-sm font-semibold text-white shadow-whatsapp hover:scale-105 transition"
           >
             <MessageCircle className="h-4 w-4" /> WhatsApp
           </a>

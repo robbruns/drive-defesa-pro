@@ -279,10 +279,10 @@ function LandingPage() {
             <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-2">Dra. Roberta Bruns</h2>
             <div className="text-sm text-muted-foreground mb-6">OAB/SC 62.012</div>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Advogada com mais de 10 anos de experiência jurídica, com atuação em Direito de Trânsito, Direito Civil, Direito Empresarial e Direito Trabalhista. Dedica-se à análise da melhor estratégia para defesa dos direitos de condutores em processos de suspensão e cassação da CNH, Lei Seca, recursos de multas e acompanhamento junto aos órgãos de trânsito e judicialmente.
+              Advogada com mais de 10 anos de experiência jurídica, com atuação em Direito de Trânsito, Direito Civil, Direito Empresarial e Direito Trabalhista. Em Direito de Trânsito, acompanha processos administrativos junto ao DETRAN, JARI e CETRAN, com atenção às particularidades de cada fase processual e aos prazos estabelecidos em lei.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              O atendimento é pautado pela análise técnica de cada caso, transparência na comunicação com o cliente e ética.
+              O atendimento é pautado pela análise técnica do caso, transparência na comunicação e ética profissional.
             </p>
             <div className="grid grid-cols-3 gap-4 max-w-md">
               {[

@@ -378,6 +378,11 @@ function LandingPage() {
 
       {/* CTA FINAL */}
       <section className="py-24 gradient-primary text-white relative overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-20"
+          style={{ backgroundImage: `url(${scalesImg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/70 via-primary/85 to-primary" />
         <div className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-gold/10 blur-3xl" />
         <div className="container mx-auto px-6 text-center relative max-w-3xl">
           <LifeBuoy className="h-10 w-10 text-gold mx-auto mb-6" />

@@ -11,6 +11,9 @@ import {
 import heroImg from "@/assets/hero-driving.jpg";
 import lawyerImg from "@/assets/roberta-bruns.jpg";
 import brandLogo from "@/assets/bruns-logo.webp";
+import cnhDocImg from "@/assets/cnh-document.jpg";
+import scalesImg from "@/assets/scales-justice.jpg";
+import roadImg from "@/assets/steering-road.jpg";
 import { WhatsAppFloat, WHATSAPP_URL } from "@/components/WhatsAppFloat";
 
 export const Route = createFileRoute("/")({
@@ -183,6 +186,16 @@ function LandingPage() {
       <section className="py-24">
         <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start">
           <div>
+            <div className="relative mb-8 overflow-hidden rounded-2xl shadow-elegant">
+              <img
+                src={cnhDocImg}
+                alt="Documento de habilitação (CNH) sobre mesa de escritório"
+                width={1280}
+                height={896}
+                loading="lazy"
+                className="w-full h-56 md:h-64 object-cover"
+              />
+            </div>
             <div className="text-xs uppercase tracking-[0.25em] text-gold-deep mb-3">Entenda o processo</div>
             <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-6">
               O que significa suspensão e cassação da CNH
@@ -254,6 +267,23 @@ function LandingPage() {
                 <p className="text-sm text-white/70">{desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* IMAGE BANNER */}
+      <section
+        className="relative h-64 md:h-80 bg-fixed bg-center bg-cover"
+        style={{ backgroundImage: `url(${roadImg})` }}
+        aria-label="Imagem de estrada e direção"
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/60 to-transparent" />
+        <div className="container mx-auto px-6 relative h-full flex items-center">
+          <div className="max-w-md">
+            <div className="text-xs uppercase tracking-[0.25em] text-gold mb-3">Direito de dirigir</div>
+            <p className="font-display text-2xl md:text-3xl text-white leading-snug">
+              A condução do veículo envolve direitos e deveres. Entender o processo é o primeiro passo para uma defesa adequada.
+            </p>
           </div>
         </div>
       </section>
@@ -348,6 +378,11 @@ function LandingPage() {
 
       {/* CTA FINAL */}
       <section className="py-24 gradient-primary text-white relative overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-20"
+          style={{ backgroundImage: `url(${scalesImg})`, backgroundSize: "cover", backgroundPosition: "center" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/70 via-primary/85 to-primary" />
         <div className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-gold/10 blur-3xl" />
         <div className="container mx-auto px-6 text-center relative max-w-3xl">
           <LifeBuoy className="h-10 w-10 text-gold mx-auto mb-6" />

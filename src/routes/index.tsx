@@ -352,10 +352,10 @@ function LandingPage() {
         <div className="container mx-auto px-6 text-center relative max-w-3xl">
           <LifeBuoy className="h-10 w-10 text-gold mx-auto mb-6" />
           <h2 className="font-display text-3xl md:text-5xl font-semibold leading-tight mb-6">
-            Quanto antes o caso for analisado, <span className="text-gold">maiores podem ser as possibilidades</span> de defesa.
+            Os prazos para cada fase do processo administrativo de trânsito são <span className="text-gold">fixados em lei</span>. Verificar a situação do seu caso permite entender quais recursos ainda estão disponíveis e como proceder em cada etapa.
           </h2>
           <p className="text-white/80 max-w-xl mx-auto mb-10">
-            Envie sua notificação para uma análise inicial. Atendimento humano, sigiloso e 100% online.
+            Envie sua notificação para uma análise inicial. Atendimento personalizado, sigiloso e 100% online.
           </p>
           <a
             href={WHATSAPP_URL}
@@ -363,7 +363,7 @@ function LandingPage() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 rounded-full gradient-whatsapp px-10 py-5 font-semibold text-white shadow-whatsapp hover:scale-105 transition"
           >
-            <MessageCircle className="h-5 w-5" /> Falar no WhatsApp
+            <MessageCircle className="h-5 w-5" /> Falar com a advogada pelo WhatsApp
           </a>
         </div>
       </section>

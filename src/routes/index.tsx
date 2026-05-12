@@ -121,10 +121,10 @@ function LandingPage() {
               <Scale className="h-3 w-3" /> Assessoria Jurídica Especializada
             </div>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] mb-6">
-              Recebeu notificação de <span className="text-gold">suspensão ou cassação</span> da CNH? Ainda pode haver solução.
+              Recebeu notificação sobre sua <span className="text-gold">CNH</span>? Conheça seus direitos e os prazos para apresentar defesa.
             </h1>
             <p className="text-lg text-white/80 mb-8 max-w-xl mx-auto">
-              Defesa administrativa estratégica em processos de trânsito, com atendimento personalizado e acompanhamento completo do início ao fim.
+              Acompanhamento jurídico em processos administrativos de trânsito, com análise técnica e atenção a cada fase do procedimento.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -133,7 +133,7 @@ function LandingPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-full gradient-whatsapp px-8 py-4 font-semibold text-white shadow-whatsapp hover:scale-105 transition"
               >
-                <MessageCircle className="h-5 w-5" /> Falar com especialista no WhatsApp
+                <MessageCircle className="h-5 w-5" /> Falar com a advogada pelo WhatsApp
               </a>
               <a
                 href="#servicos"
@@ -141,6 +141,12 @@ function LandingPage() {
               >
                 Conhecer atendimento <ArrowRight className="h-4 w-4" />
               </a>
+            </div>
+            <div className="mt-8 max-w-xl mx-auto rounded-xl border border-white/15 bg-white/5 backdrop-blur p-5 text-left">
+              <div className="text-sm font-semibold text-gold mb-2">Sobre os prazos processuais</div>
+              <p className="text-sm text-white/75 leading-relaxed">
+                Os prazos para cada fase do processo administrativo de trânsito — defesa prévia, recurso à JARI e recurso ao CETRAN — são fixados em lei e variam conforme a situação. Verificar a etapa em que se encontra o seu processo permite entender quais recursos ainda estão disponíveis.
+              </p>
             </div>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-6 text-sm text-white/70">
               <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-gold" /> Atendimento online em todo o Brasil</div>

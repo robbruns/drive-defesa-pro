@@ -186,6 +186,16 @@ function LandingPage() {
       <section className="py-24">
         <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start">
           <div>
+            <div className="relative mb-8 overflow-hidden rounded-2xl shadow-elegant">
+              <img
+                src={cnhDocImg}
+                alt="Documento de habilitação (CNH) sobre mesa de escritório"
+                width={1280}
+                height={896}
+                loading="lazy"
+                className="w-full h-56 md:h-64 object-cover"
+              />
+            </div>
             <div className="text-xs uppercase tracking-[0.25em] text-gold-deep mb-3">Entenda o processo</div>
             <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-6">
               O que significa suspensão e cassação da CNH

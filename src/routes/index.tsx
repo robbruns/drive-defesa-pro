@@ -271,6 +271,23 @@ function LandingPage() {
         </div>
       </section>
 
+      {/* IMAGE BANNER */}
+      <section
+        className="relative h-64 md:h-80 bg-fixed bg-center bg-cover"
+        style={{ backgroundImage: `url(${roadImg})` }}
+        aria-label="Imagem de estrada e direção"
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/60 to-transparent" />
+        <div className="container mx-auto px-6 relative h-full flex items-center">
+          <div className="max-w-md">
+            <div className="text-xs uppercase tracking-[0.25em] text-gold mb-3">Direito de dirigir</div>
+            <p className="font-display text-2xl md:text-3xl text-white leading-snug">
+              A condução do veículo envolve direitos e deveres. Entender o processo é o primeiro passo para uma defesa adequada.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* SOBRE */}
       <section id="sobre" className="py-24">
         <div className="container mx-auto px-6 grid lg:grid-cols-5 gap-12 items-center">

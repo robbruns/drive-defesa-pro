@@ -11,7 +11,6 @@ import {
 import heroImg from "@/assets/hero-driving.jpg";
 import lawyerImg from "@/assets/roberta-bruns.jpg";
 import brandLogo from "@/assets/bruns-logo.webp";
-import cnhDocImg from "@/assets/cnh-document.jpg";
 import scalesImg from "@/assets/scales-justice.jpg";
 import roadImg from "@/assets/steering-road.jpg";
 import { WhatsAppFloat, WHATSAPP_URL } from "@/components/WhatsAppFloat";
@@ -185,17 +184,7 @@ function LandingPage() {
       {/* EXPLICAÇÃO */}
       <section className="py-24">
         <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start">
-          <div>
-            <div className="relative mb-8 overflow-hidden rounded-2xl shadow-elegant">
-              <img
-                src={cnhDocImg}
-                alt="Documento de habilitação (CNH) sobre mesa de escritório"
-                width={1280}
-                height={896}
-                loading="lazy"
-                className="w-full h-56 md:h-64 object-cover"
-              />
-            </div>
+        <div>
             <div className="text-xs uppercase tracking-[0.25em] text-gold-deep mb-3">Entenda o processo</div>
             <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-6">
               O que significa suspensão e cassação da CNH

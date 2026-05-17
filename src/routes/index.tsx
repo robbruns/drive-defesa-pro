@@ -11,7 +11,6 @@ import {
 import heroImg from "@/assets/hero-driving.jpg";
 import lawyerImg from "@/assets/roberta-bruns.jpg";
 import brandLogo from "@/assets/bruns-logo.webp";
-import cnhDocImg from "@/assets/cnh-document.jpg";
 import scalesImg from "@/assets/scales-justice.jpg";
 import roadImg from "@/assets/steering-road.jpg";
 import { WhatsAppFloat, WHATSAPP_URL } from "@/components/WhatsAppFloat";

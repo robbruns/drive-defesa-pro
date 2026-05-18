@@ -14,10 +14,6 @@ import scalesImg from "@/assets/scales-justice.jpg";
 import roadImg from "@/assets/steering-road.jpg";
 import { WhatsAppFloat, WHATSAPP_URL } from "@/components/WhatsAppFloat";
 
-export default function LandingPage() { return <LandingPageImpl />; }
-function LandingPageImpl() { return <LandingPageInner />; }
-function LandingPageInner() { return <Page />; }
-function Page() {
 
 const problemas = [
   { icon: Ban, title: "Suspensão da CNH", desc: "Processo administrativo de suspensão do direito de dirigir." },

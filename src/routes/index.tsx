@@ -62,7 +62,7 @@ const faqs = [
   { q: "Preciso comparecer presencialmente?", a: "Na maioria dos casos, não. A defesa administrativa pode ser conduzida de forma online, com procuração e documentos digitais." },
 ];
 
-function LandingPage() {
+export default function LandingPage() {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       <WhatsAppFloat />

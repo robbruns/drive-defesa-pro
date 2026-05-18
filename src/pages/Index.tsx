@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import {
   Scale, ShieldCheck, AlertTriangle, Wine, Gauge, FileWarning,
   Building2, Ban, FileText, Users, Clock, Sparkles, Headphones, LifeBuoy,
@@ -15,17 +14,6 @@ import scalesImg from "@/assets/scales-justice.jpg";
 import roadImg from "@/assets/steering-road.jpg";
 import { WhatsAppFloat, WHATSAPP_URL } from "@/components/WhatsAppFloat";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Bruns Advogados | Defesa de CNH em Pomerode/SC" },
-      { name: "description", content: "Bruns Advogados — defesa administrativa em suspensão e cassação da CNH, Lei Seca, pontos e multas gravíssimas. Advogada Roberta Bruns OAB/SC 62.012." },
-      { property: "og:title", content: "Bruns Advogados | Direito de Trânsito" },
-      { property: "og:description", content: "Defesa administrativa estratégica em processos de CNH. Atendimento personalizado em Pomerode/SC e online." },
-    ],
-  }),
-  component: LandingPage,
-});
 
 const problemas = [
   { icon: Ban, title: "Suspensão da CNH", desc: "Processo administrativo de suspensão do direito de dirigir." },
@@ -74,7 +62,7 @@ const faqs = [
   { q: "Preciso comparecer presencialmente?", a: "Na maioria dos casos, não. A defesa administrativa pode ser conduzida de forma online, com procuração e documentos digitais." },
 ];
 
-function LandingPage() {
+export default function LandingPage() {
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       <WhatsAppFloat />
